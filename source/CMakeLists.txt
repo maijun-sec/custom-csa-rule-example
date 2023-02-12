@@ -1,0 +1,2 @@
+ADD_SUBDIRECTORY(category_1)
+ADD_SUBDIRECTORY(category_2)
