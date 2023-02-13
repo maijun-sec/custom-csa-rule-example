@@ -29,6 +29,12 @@ clang -cc1 -analyzer-checker-help -load xx.so
 clang -c --analyzer -fplugin=xx.so -Xanalyzer -analyzer-checker=checker-list
 ```
 
+## licenses
+The code for this project is released under an Apache 2.0 License (included in the LICENSE file in the root directory of the project).
+
+This project may use some other clang static analyzer rules, for these rules, will use original license.
+- MainCallChecker: copy from original llvm-project, Apache 2.0
+
 ## Reference
 - install llvm and clang 15.0.7: https://bbs.huaweicloud.com/blogs/391095
 - llvm-project: https://github.com/llvm/llvm-project
