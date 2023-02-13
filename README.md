@@ -5,7 +5,7 @@
 - llvm + clang 15.0.7
 
 
-## build with cmake
+## Build with cmake
 
 ``` bash
 mkdir build && cd build
@@ -13,7 +13,9 @@ cmake -DLLVM_DIR=${LLVM_INSTALL_PATH}/lib/cmake/llvm ..
 make -j8
 ```
 
-## use as plugin
+## Usage
+
+use as plugin
 
 ``` bash
 # view a list of native rules supported by clang
@@ -29,7 +31,7 @@ clang -cc1 -analyzer-checker-help -load xx.so
 clang -c --analyzer -fplugin=xx.so -Xanalyzer -analyzer-checker=checker-list
 ```
 
-## licenses
+## Licenses
 The code for this project is released under an Apache 2.0 License (included in the LICENSE file in the root directory of the project).
 
 This project may use some other clang static analyzer rules, for these rules, will use original license.
@@ -38,3 +40,4 @@ This project may use some other clang static analyzer rules, for these rules, wi
 ## Reference
 - install llvm and clang 15.0.7: https://bbs.huaweicloud.com/blogs/391095
 - llvm-project: https://github.com/llvm/llvm-project
+- clang analyzer guide: https://github.com/haoNoQ/clang-analyzer-guide
